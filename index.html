@@ -12,31 +12,20 @@
     <style type="text/css">
     </style>
 
-    <script type="text/javascript">
-        function disableResize() {
-            parent.document.getElementById("leftFrame").noResize = true
-            parent.document.getElementById("rightFrame").noResize = true
-        }
-        function enableResize() {
-            parent.document.getElementById("leftFrame").noResize = false
-            parent.document.getElementById("rightFrame").noResize = false
-        }
+    <script language="javascript">
+        
     </script>
 </head>
 
 <frameset cols="250, *">
     <!-- Nav Left -->
-    <frame src="./NavLeft.html" name="NavLeft" id="NavLeft">
+    <frame src="./NavLeft.html" name="NavLeft" noResize>
         <frameset>
             <!-- Main Frame -->
             <frame src="./MainFrame.html" name="MainFrame"></frame>
         </frameset>
         <noframes>
-
-            <body>
-                <input type="button" onclick="disableResize()" value="No resize">
-                <input type="button" onclick="enableResize()" value="Resize">
-            </body>
+            <body></body>
         </noframes>
 
 </html>
